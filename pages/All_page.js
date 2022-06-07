@@ -4,44 +4,44 @@ import { StyleSheet } from 'react-native';
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 
-export default function Collection({navigation,route}) {
-  const goto = () => {
-    navigation.push('Product Page');
-}
-const men = [
-  {
-      title: "Personalised Everton Watch",
-      res: require("../images/men/personalised_everton.webp"),
-      cost: "Rs.2999"
-  },
-  {
-      title: "Personalised Classic",
-      res: require("../images/men/personalised_classic.webp"),
-      cost: "Rs.990"
-
-  }
-  ,
-  {
-      title: "Personalised Cuboid Locket For Men",
-      res: require("../images/men/personalised_cuboid_locket.webp"),
-      cost: "Rs.1499"
-
-  },
-  {
-      title: "Personalised Emperor Locket for Men",
-      res: require("../images/men/personalised_emperor.webp"),
-      cost: "Rs.1999"
-
-  },
-  {
-      title: "Personalised Silver Kada",
-      res: require("../images/men/personalised_silver_kada.webp"),
-      cost: "Rs.1399"
-
-  }
-];
-const bracelets = [
+export default function All_page({navigation}) {
   
+  const collection = [
+    {
+        title: "Hue Ring",
+        res: require("../images/products/hue_ring.webp"),
+        cost: "Rs.1499"
+    },
+    {
+        title: "Zodiac Pendant",
+        res: require("../images/products/zodiac_pendant.webp"),
+        cost: "Rs.1199"
+
+    }
+    ,
+    {
+        title: "Emperor Locket",
+        res: require("../images/products/emperor_locket.webp"),
+        cost: "Rs.899"
+
+    },
+    {
+        title: "Classic Stature",
+        res: require("../images/products/classic_stature.webp"),
+        cost: "Rs.2999"
+
+    },
+    {
+        title: "Everton Watch",
+        res: require("../images/products/everton_watch.webp"),
+        cost: "Rs.6999"
+
+    },
+    {
+      title: "Personalised Cuboid Pendant",
+      res: require("../images/women/personalised_cuboid.jpg"),
+      cost: "Rs.1199"
+  },
   {
       title: "Personalised Classic Bracelet",
       res: require("../images/women/personalised_classic.jpg"),
@@ -66,18 +66,45 @@ const bracelets = [
       res: require("../images/men/personalised_silver_kada.webp"),
       cost: "Rs.990"
 
-  }
-];
-  const c = route.params;
-  const live= c;
-  
+  },
+    {
+      title: "Personalised Everton Watch",
+      res: require("../images/men/personalised_everton.webp"),
+      cost: "Rs.2999"
+    },
+    {
+      title: "Personalised Classic Bracelets",
+      res: require("../images/men/personalised_classic.webp"),
+      cost: "Rs.990"
+
+    }
+    ,
+    {
+      title: "Personalised Cuboid Locket For Men",
+      res: require("../images/men/personalised_cuboid_locket.webp"),
+      cost: "Rs.1499"
+
+    },
+    {
+      title: "Personalised Emperor Locket for Men",
+      res: require("../images/men/personalised_emperor.webp"),
+      cost: "Rs.1999"
+
+    },
+    {
+      title: "Personalised Silver Kada",
+      res: require("../images/men/personalised_silver_kada.webp"),
+      cost: "Rs.1399"
+
+    }
+  ]
   return (
     <>
       <ScrollView>
         <View style={{ flex: 1,backgroundColor:"white", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-start", padding: 1 }}>
 
           {
-            live.map((item, key) => {
+            collection.map((item, key) => {
               return (
 
            

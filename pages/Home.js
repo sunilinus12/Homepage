@@ -8,8 +8,40 @@ export default function Home({ navigation }) {
     const goto = () => {
         navigation.push('Product Page');
     }
+    const men = [
+        {
+            title: "Personalised Everton Watch",
+            res: require("../images/men/personalised_everton.webp"),
+            cost: "Rs.2999"
+        },
+        {
+            title: "Personalised Classic",
+            res: require("../images/men/personalised_classic.webp"),
+            cost: "Rs.990"
+      
+        }
+        ,
+        {
+            title: "Personalised Cuboid Locket For Men",
+            res: require("../images/men/personalised_cuboid_locket.webp"),
+            cost: "Rs.1499"
+      
+        },
+        {
+            title: "Personalised Emperor Locket for Men",
+            res: require("../images/men/personalised_emperor.webp"),
+            cost: "Rs.1999"
+      
+        },
+        {
+            title: "Personalised Silver Kada",
+            res: require("../images/men/personalised_silver_kada.webp"),
+            cost: "Rs.1399"
+      
+        }
+      ];
     const goto_collection = () => {
-        navigation.push("Collection Page");
+        navigation.push("Collection Page",men);
     }
     const ProductData = [
         {
@@ -163,6 +195,15 @@ export default function Home({ navigation }) {
 
         }
     ];
+    const pendants = [
+        {
+            title: "Personalised Cuboid Pendant",
+            res: require("../images/women/personalised_cuboid.jpg"),
+            cost: "Rs.1199"
+        },
+      
+      
+    ];
 
     const instagram = [
         {
@@ -207,7 +248,7 @@ export default function Home({ navigation }) {
 
     return (
         <ScrollView style={{ backgroundColor: "white" }}>
-            <Topbar />
+            <Topbar  />
             <Slider />
 
 
